@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+      
+      function ale(){
+        var al = alert("Registration Success\nتم التسجيل بنجاح");
+        if(al==True){
+          window.location="index.html";
+        }
+      }
+      function la(src) {
+        window.location = src;
+      }
+      function profile() {
+        document.getElementById("profile").src = "profile Woman.png";
+        document.getElementById("people-link2").style.backgroundColor = "#ecd0cf";
+        document.getElementById("people-link1").style.backgroundColor = "white";
+      }
+      function profileM() {
+        document.getElementById("profile").src = "profile Male.png";
+        document.getElementById("people-link1").style.backgroundColor = "#ecd0cf";
+        document.getElementById("people-link2").style.backgroundColor = "white";
+      }
+      function button() {
+        document.getElementById("redirect").content = "1; url=index.html";
+      }
+
+    </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="" id="redirect">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>Sign up</title>
+
+</head>
+<body class="sign"> 
+    <div id="navbar">
+
+        <a href="index.html"><img class="icon1" src="Home.png" alt="" width="35px" height="35px"></a>
+        <a href="Sign_up.html">
+          <button id="b_sign">Sign Up</button>
+        </a>
+        <select onchange="la(this.value)" aria-placeholder="hello" class="Drop_down">
+          <option value="" disabled selected>اختار الهدف</option>
+          <option value="No poverty.html">القضاء علي الفقر</option>
+          <option value="2.html">القضاء التام علي الجوع</option>
+          <option value="3.html">الصحة الجيدة والرفاه</option>
+          <option value="4.html">التعليم الجيد</option>
+          <option value="5.html">المساواه بين الجنسين</option>
+          <option value="6.html">المياه النظيفة والنظافة الصحية</option>
+          <option value="7.html">طاقة نظيفة وبأسعار معقولة</option>
+          <option value="8.html">العمل اللائق ونمو الاقتصاد</option>
+          <option value="9.html">الصناعة والابتكار والهياكل الاساسية</option>
+          <option value="10.html">الحد من اوجه عدم المساواه</option>
+          <option value="11.html">مدن ومجتمعات محلية مستدامة</option>
+          <option value="12.html">الاستهلاك والانتاج المسؤولان</option>
+          <option value="13.html">العمل المناخي</option>
+          <option value="14.html">الحياة تحت الماء</option>
+          <option value="15.html">الحياة في البر</option>
+          <option value="16.html">السلام والعدل والمؤسسات القوية</option>
+          <option value="17.html">عقد الشراكات لتحقيق الاهداف</option>
+          <option value="Sign_up.html">Sign Up With us</option>
+    
+        </select>
+    
+        <a href="#text">
+          <button class="b_home">
+            <img src="up-arrow (1).png" alt="" width="20px" height="30px" class="ico">
+          </button>
+        </a>
+    
+      </div>
+
+    <form class="formula" action="index.html"onsubmit="ale()">
+        <h2 class="head_form">REGISTRATION FORM</h2>
+        <img src="profile Male.png" alt="" width="50px" height="50px" id="profile">
+        <br>
+        <label class="col1">First Name</label>
+        <label class="col2">Last Name</label>
+        <input type="name" placeholder="" id="input1" required>
+        
+        <input type="name" id="input12" required>
+        <label class="col1">Email Address</label>
+        <input type="email" placeholder="" id="input2" required>
+        <label class="col1">Gender</label>
+        <div class="gender">
+            <a onclick="profileM()" id="people-link1">Male</a> 
+            <a onclick="profile()" id="people-link2">Female</a>
+        </div>
+        <label class="col1C">City</label>
+        <input type="name" id="input4" required/>
+        <input type="submit" id="input3" value="REGISTER NOW">
+        <!-- <button type="submit" id="input3">REGISTER NOW </button> -->
+
+        
+        <!-- <input type="radio"name="female" placeholder="male" id="male2">
+        <label>Male</label>
+        <input type="radio" name="female" value="female" id="male">
+        <label for="male">Female</label>
+        </div> -->
+    </form>
+</body>
+</html>
